@@ -1,0 +1,8 @@
+[
+  {"Average": "6.98", "BonusPoints": 1203, "Callsign": "G4YSS", "Points": 4473, "Position": "1", "Summits": 813, "totalPoints": 5676, "UserID": 77, "Username": "g4yss"},
+  {"Average": "3.94", "BonusPoints": 246, "Callsign": "G4OBK", "Points": 5108, "Position": "2", "Summits": 1358, "totalPoints": 5354, "UserID": 540, "Username": "g4obk"},
+  {"Average": "5.74", "BonusPoints": 100, "Callsign": "2E0XIS ", "Points": 900, "Position": "3", "Summits": 200, "totalPoints": 1000, "UserID": 900, "Username": "DAVID SEWELL"},
+  {"Average": "4.10", "BonusPoints": 10, "Callsign": "g1oxh", "Points": 410, "Position": "4", "Summits": 100, "totalPoints": 420, "UserID": 901, "Username": "someone@example.test"},
+  {"Average": "2.00", "BonusPoints": 0, "Callsign": "2#0FWP", "Points": 20, "Position": "5", "Summits": 10, "totalPoints": 20, "UserID": 902, "Username": "junk"},
+  {"Average": "1.00", "BonusPoints": 0, "Callsign": "anon22082801", "Points": 5, "Position": "6", "Summits": 5, "totalPoints": 5, "UserID": 903, "Username": "anon22082801"}
+]

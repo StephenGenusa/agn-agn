@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# Python / tooling
+# ---------------------------------------------------------------------------
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Editors
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# AI assistant scratch space
+#
+# Working notes, session state and local agent configuration. None of it is
+# part of the project, and some of it records local paths.
+# ---------------------------------------------------------------------------
+.claude/
+.claude.json
+.claude.json.backup
+CLAUDE.md
+CLAUDE.local.md
+.superpowers/
+.aider*
+.cursor/
+.cursorrules
+.windsurfrules
+.github/copilot-instructions.md
+
+# Design notes, phase plans and source research. Useful while building, noise
+# in a published repository.
+docs/research/
+docs/superpowers/
+
+# ---------------------------------------------------------------------------
+# data/ — everything here is fetched or generated
+#
+# Stores (*.xlsx), exports (*.dta, *.scp, *.lst) and the raw archive are all
+# reproducible with `callsigns harvest` / `callsigns export`, and the tree runs
+# to hundreds of megabytes. Two files are deliberately kept: the vendored
+# continent table, which the .lst exporter needs at runtime, and the README
+# that documents the directory.
+# ---------------------------------------------------------------------------
+data/
+!data/README.md
+!data/continents.json
+
+# Atomic-save temp files, wherever they land.
+*.tmp

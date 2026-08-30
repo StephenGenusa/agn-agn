@@ -1,0 +1,3 @@
+# Workbooks and call-list exports are binary.
+*.xlsx binary
+*.dta binary

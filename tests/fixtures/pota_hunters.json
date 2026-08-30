@@ -1,0 +1,7 @@
+[
+  {"activeCallsign": "SM3NRY", "numParks": 6775, "numQSOs": 8780, "qsosCW": 2235, "qsosDATA": 447, "qsosPHONE": 6098},
+  {"activeCallsign": "F5PYI", "numParks": 6265, "numQSOs": 7868, "qsosCW": 9, "qsosDATA": 3, "qsosPHONE": 7856},
+  {"activeCallsign": "K2UPD", "numParks": 5529, "numQSOs": 6421, "qsosCW": 2093, "qsosDATA": 642, "qsosPHONE": 3686},
+  {"activeCallsign": "k5hip", "numParks": 40, "numQSOs": 55, "qsosCW": 0, "qsosDATA": 0, "qsosPHONE": 55},
+  {"activeCallsign": "W1AW", "numParks": 30, "numQSOs": 44, "qsosCW": 44, "qsosDATA": 0, "qsosPHONE": 0, "unexpectedField": "ignore me"}
+]

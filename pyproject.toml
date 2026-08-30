@@ -1,0 +1,60 @@
+[project]
+name = "agn-agn"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+callsigns = "callsigns.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "mypy>=1.13",
+    "ruff>=0.8",
+    "types-requests>=2.32",
+    "types-openpyxl>=3.1.5.20260807",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+extend-exclude = ["docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "D", "ANN", "RUF"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+# SIM905: tests split real Cabrillo lines on purpose — a pre-split list
+# literal would hide the token positions those tests exist to pin down.
+"tests/*" = ["D", "ANN", "RUF012", "SIM905"]
+"tools/*" = ["T201"]
+
+[tool.mypy]
+python_version = "3.14"
+strict = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["network: hits live upstream services; skipped by default"]
+addopts = "-m 'not network'"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["callsigns"]
